@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, supplies_by_holiday_hash|
     season_s = season.to_s.split('_').map(&:capitalize).join(' ')
-
+binding.pry
     puts "#{season_s}:"
 
       supplies_by_holiday_hash.each do |holiday, supplies_array|
